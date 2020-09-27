@@ -1,0 +1,20 @@
+<h2>without pipe</h2>
+<p>Ravi born on {{birthday}}</p>
+<h2>with pipe</h2>
+<p>Ravi born on {{birthday|date}}</p>
+<p>Ravi born on {{birthday|date:'fullDate'}}</p>
+<h2>
+  Transforming data with parameters
+</h2>
+<p>Ravi earns {{cost |currency:'INR'}}</p>
+<p>Ravi earns {{cost |currency:'EUR':'Euros '}}</p>
+<p>Ravi earns {{cost |currency:'USD':'Dollars '}}</p>
+<h2>
+  slice pipe takes atleast one parameter
+</h2>
+<p>{{'Ravi Kambhampati'|slice:5}}</p>
+<h2>
+  Transforming data with chained pipes
+</h2>
+<p>Ravi born on {{birthday|date:'fullDate'}}</p>
+<p>Ravi born on {{birthday|date:'fullDate'|uppercase}}</p>

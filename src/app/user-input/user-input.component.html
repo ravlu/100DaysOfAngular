@@ -1,0 +1,16 @@
+
+<p>pass by $event object</p>
+<input  (keyup)="onAddMe($event)" >
+<p>{{values}}</p>
+
+<p>get by template reference variable</p>
+<input #box1 (keyup)="0" >
+<p>{{box1.value}}</p>
+
+<p>pass by template reference variable</p>
+<input #box2 (keyup)="onAddTRF(box2.value,box1.value)" >
+<p>{{conCatvalues}}</p>
+
+<p>on press key enter</p>
+<input #box3 (keyup.enter)="onAddEnter(box3.value)" >
+<p>{{values}}</p>

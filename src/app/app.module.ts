@@ -6,16 +6,34 @@ import { AppComponent } from './app.component';
 import { UserInputComponent } from './user-input/user-input.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { HomeComponent } from './home/home.component';
+import { TemplateCodeComponent } from './template-code/template-code.component';
+import { FormsModule } from '@angular/forms';
+import { CustomPipe } from './pipe/custom-pipe/custom-pipe.pipe';
+import { DebouncePipe } from './pipe/custom-pipe/debounce.pipe';
+import { TrackerPipe } from './pipe/custom-pipe/tracker.pipe';
+import { FetchPipePipe } from './pipe/custom-pipe/fetch-pipe.pipe';
+import { TutorialseComponent } from './tutorialse/tutorialse.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PrintPipePipe } from './pipe/custom-pipe/print-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserInputComponent,
     PipeComponent,
-    HomeComponent
+    HomeComponent,
+    TemplateCodeComponent,
+    CustomPipe,
+    DebouncePipe,
+    TrackerPipe,
+    FetchPipePipe,
+    TutorialseComponent,
+    PrintPipePipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

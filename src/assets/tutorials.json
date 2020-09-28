@@ -1,0 +1,18 @@
+{
+  "concepts": [
+    {
+      "concept": {
+        "name": "User Input",
+        "description": "User actions such as clicking a link, pushing a button, and entering text raise DOM events. This page explains how to bind those events to component event handlers using the Angular event binding syntax",
+        "url": "https://angular.io/guide/user-input"
+      }
+    },
+    {
+      "concept": {
+        "name": "Pipes",
+        "description": "Use pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions you can use in template expressions to accept an input value and return a transformed value",
+        "url": "https://angular.io/guide/pipes"
+      }
+    }
+  ]
+}

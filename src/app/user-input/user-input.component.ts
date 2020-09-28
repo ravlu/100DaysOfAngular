@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import * as template from './user-input.component.html';
 @Component({
-   templateUrl: './user-input.component.html',
+  templateUrl: './user-input.component.html',
   styleUrls: ['./user-input.component.scss'],
 })
 export class UserInputComponent implements OnInit {
+  public currContent: string = template.default;
   public values: string;
   public conCatvalues: string;
   constructor() {}

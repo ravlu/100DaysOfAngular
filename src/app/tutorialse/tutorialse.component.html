@@ -1,0 +1,13 @@
+<div *ngFor="let tutorial of ('assets/tutorials.json'|fetch)">
+  {{tutorial.concept.name}}
+</div>
+<div *ngFor="let tutorial of ('assets/tutorials.json'|fetch)">
+  <p>{{tutorial.concept|json}}</p>
+</div>
+<p>
+  {{'assets/tutorials.json'|fetch|json}}
+</p>
+<p>
+  {{this|printCode}}
+</p>
+<!-- pipe obseravbles and async pipe tutorials needs to be added -->

@@ -18,3 +18,9 @@
 </h2>
 <p>Ravi born on {{birthday|date:'fullDate'}}</p>
 <p>Ravi born on {{birthday|date:'fullDate'|uppercase}}</p>
+<p>exponents using pipe</p>
+<p>{{2|exp:10}}</p>
+<input type="text" [(ngModel)]="inputValue">
+<p>{{inputValue|tracker}}</p>
+<p>{{inputValue}}</p>
+<app-template-code [htmlContent]='currContent'></app-template-code>

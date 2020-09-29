@@ -5,8 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PrintPipePipe implements PipeTransform {
 
-  transform(value: any ): void {
+  transform(value: any ): any {
     console.log(value);
+    return value;
   }
 
 }

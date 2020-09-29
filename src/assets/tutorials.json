@@ -13,6 +13,13 @@
         "description": "Use pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions you can use in template expressions to accept an input value and return a transformed value",
         "url": "https://angular.io/guide/pipes"
       }
+    },
+    {
+      "concept": {
+        "name": "Pipes",
+        "description": "Use pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions you can use in template expressions to accept an input value and return a transformed value",
+        "url": "https://angular.io/guide/pipes"
+      }
     }
   ]
 }

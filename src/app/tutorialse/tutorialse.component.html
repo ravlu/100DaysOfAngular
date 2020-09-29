@@ -7,7 +7,16 @@
 <p>
   {{'assets/tutorials.json'|fetch|json}}
 </p>
-<p>
+<!-- <p>
   {{this|printCode}}
+</p> -->
+<p>
+  {{message$|async}}
+</p>
+<!-- <p *ngFor="let msg of message$|async">
+  {{msg}}
+</p> -->
+<p *ngIf="!isChangesExecuted">
+ngOnChanges wont be executed without input property or any property changes
 </p>
 <!-- pipe obseravbles and async pipe tutorials needs to be added -->

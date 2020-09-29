@@ -1,0 +1,12 @@
+<p *ngIf="!isChangesExecuted">
+  NO     NG CHANGES...........
+  </p>
+  <p *ngIf="isChangesExecuted">
+    ngOnChanges executed and the name property sets to {{name}}
+    </p>
+    <p *ngIf="inInitExecuted">
+     OnInit : ngOnChanges not executed and the name property does not sets to {{name}}
+      </p>
+      <p *ngIf="!inInitExecuted">
+        OnInit : ngOnChanges executed and the name property sets to {{name}}
+        </p>

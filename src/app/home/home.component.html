@@ -1,4 +1,15 @@
 <!-- <button  [routerLink]="['home']">Home</button > -->
-  <button  [routerLink]="['user-input']">User Input</button >
-    <button  [routerLink]="['pipe']">Pipe</button >
-      <button  [routerLink]="['tutorials']">Tutorials</button >
+<button [routerLink]="['user-input']">User Input</button>
+<button [routerLink]="['pipe']">Pipe</button>
+<button [routerLink]="['tutorials']">Tutorials</button>
+<button [routerLink]="['life-cycle','Ravi']">Life Cycle</button>
+<div>
+
+  without input parameter
+  <app-life-cycle ></app-life-cycle>
+
+</div>
+<div>
+  with input paramter
+  <app-life-cycle name="Lucky"></app-life-cycle>
+</div>

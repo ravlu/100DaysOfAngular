@@ -16,6 +16,7 @@ import { TutorialseComponent } from './tutorialse/tutorialse.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PrintPipePipe } from './pipe/custom-pipe/print-pipe.pipe';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { SpyClassDirective } from './directives/spy-class.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     FetchPipePipe,
     TutorialseComponent,
     PrintPipePipe,
-    LifeCycleComponent
+    LifeCycleComponent,
+    SpyClassDirective
   ],
   imports: [
     BrowserModule,

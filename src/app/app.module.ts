@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PrintPipePipe } from './pipe/custom-pipe/print-pipe.pipe';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { SpyClassDirective } from './directives/spy-class.directive';
+import { AfterViewComponent } from './life-cycle/after-view/after-view.component';
+import { ChildViewComponent } from './life-cycle/after-view/child-view/child-view.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { SpyClassDirective } from './directives/spy-class.directive';
     TutorialseComponent,
     PrintPipePipe,
     LifeCycleComponent,
-    SpyClassDirective
+    SpyClassDirective,
+    AfterViewComponent,
+    ChildViewComponent
   ],
   imports: [
     BrowserModule,

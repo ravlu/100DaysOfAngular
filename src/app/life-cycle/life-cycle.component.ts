@@ -37,11 +37,11 @@ export class LifeCycleComponent
     // ng changes will be executed only if the component has any input property
     // this.name = this.route.snapshot.params['name'];
     this.isChangesExecuted = true;
-    console.log('OnChanges');
-    console.log(changes);
+    //console.log('OnChanges');
+    //console.log(changes);
     if (this.customObject) {
-      console.log(this.customObject.id);
-      console.log(this.customObject.name);
+    //  console.log(this.customObject.id);
+    //  console.log(this.customObject.name);
     }
   }
 
@@ -50,24 +50,24 @@ export class LifeCycleComponent
       this.inInitExecuted = true;
       // this.name = this.route.snapshot.params['name'];
     }
-    console.log('ngOnInit');
+    //console.log('ngOnInit');
   }
   // ngDoCheck(): void {
   //   console.log('ngDoCheck');
   // }
   ngAfterContentInit(): void {
-    console.log('ngAfterContentInit');
+    //console.log('ngAfterContentInit');
   }
   ngAfterContentChecked(): void {
-    console.log('ngAfterContentChecked');
+  //  console.log('ngAfterContentChecked');
   }
   ngAfterViewInit(): void {
-    console.log('ngAfterViewInit');
+   // console.log('ngAfterViewInit');
   }
   ngAfterViewChecked(): void {
-    console.log('ngAfterViewChecked');
+    //console.log('ngAfterViewChecked');
   }
   ngOnDestroy(): void {
-    console.log('ngOnDestroy');
+    //console.log('ngOnDestroy');
   }
 }

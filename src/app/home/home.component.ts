@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AdItem } from '../components/ad-item';
 import { ICustomObject } from '../interfaces/icustom-object';
+import { AdService } from '../services/ad.service';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +9,16 @@ import { ICustomObject } from '../interfaces/icustom-object';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  ads: AdItem[];
+
   public inputValue: string = 'text';
   public hereObject: ICustomObject = <ICustomObject>{ id: 1, name: 'ravi' };
-  constructor() {}
+  constructor(public adService: AdService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.ads = this.adService.getAds();
+   
+  }
   public UpdateProp(value: string): void {
     this.inputValue = value;
     //this.hereObject.name = 'Ravi';

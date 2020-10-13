@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { AdItem } from '../components/ad-item';
 import { ICustomObject } from '../interfaces/icustom-object';
@@ -17,8 +18,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.ads = this.adService.getAds();
-   
   }
+ 
   public UpdateProp(value: string): void {
     this.inputValue = value;
     //this.hereObject.name = 'Ravi';

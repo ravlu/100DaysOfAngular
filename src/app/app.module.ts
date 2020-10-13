@@ -23,7 +23,9 @@ import { AdHostDirective } from './directives/ad-host.directive';
 import { AdBannerComponent } from './components/ad-banner/ad-banner.component';
 import { HeroJobAdComponent } from './components/hero-job-ad.component';
 import { HeroProfileComponent } from './components/hero-profile.component';
-
+import {MatChipList, MatChipsModule} from '@angular/material/chips';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { DragDropChipsComponent } from './components/drag-drop-chips.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,13 +46,16 @@ import { HeroProfileComponent } from './components/hero-profile.component';
     AdHostDirective,
     AdBannerComponent,
     HeroJobAdComponent,
-    HeroProfileComponent
+    HeroProfileComponent,
+    DragDropChipsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    MatChipsModule,
+    AppRoutingModule,
+    DragDropModule
   ],
   providers: [],
  // entryComponents: [ HeroJobAdComponent, HeroProfileComponent ],

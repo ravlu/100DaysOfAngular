@@ -8,15 +8,16 @@ import { TutorialseComponent } from './tutorialse/tutorialse.component';
 import { UserInputComponent } from './user-input/user-input.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  { path: 'pipe', component: PipeComponent },
+   { path: 'pipe', component: PipeComponent },
   { path: 'tutorials', component: TutorialseComponent },
   { path: 'user-input', component: UserInputComponent },
   { path: 'life-cycle/:name', component: LifeCycleComponent }
+   ,
+  // {
+  //   path: 'home',
+  //   component: HomeComponent
+  // },
+   { path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];
 

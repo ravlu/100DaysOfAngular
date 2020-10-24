@@ -1,7 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
 import { AdComponent } from '../interfaces/ad.component';
+import { AdService } from '../services/ad.service';
 
 @Component({
+  // selector: 'app-hero-profile',
   template: `
     <div class="hero-profile">
       <h3>Featured Hero Profile</h3>
@@ -26,6 +30,34 @@ import { AdComponent } from '../interfaces/ad.component';
     `,
   ],
 })
-export class HeroProfileComponent implements AdComponent {
-  @Input() data: any;
+export class HeroProfileComponent implements AdComponent, OnInit {
+  data: any;
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private adService: AdService
+  ) {
+    // console.log("con");
+    // console.log(this.route);
+    // console.log(this.route.paramMap);
+    // console.log("end");
+    // this.data = this.route.paramMap.pipe(
+    //   switchMap((params: ParamMap) =>
+    //     this.adService.getHero(Number(params.get('id')))
+    //   )
+    // );
+  }
+  ngOnInit() {
+    console.log('OnInit');
+    console.log(this.route);
+    console.log(this.route.paramMap);
+    // this.data = this.route.paramMap.pipe(
+    //   switchMap((params: ParamMap) =>
+    //     this.adService.getHero(Number(params.get('id')))
+    //   )
+    // );
+    this.route.paramMap.subscribe((params: ParamMap) => {
+      this.data = this.adService.getHero(Number(params.get('id')));
+    });
+  }
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { HeroProfileComponent } from './components/hero-profile.component';
 import { HomeComponent } from './home/home.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { PipeComponent } from './pipe/pipe.component';
@@ -12,6 +13,8 @@ const routes: Routes = [
   { path: 'tutorials', component: TutorialseComponent },
   { path: 'user-input', component: UserInputComponent },
   { path: 'life-cycle/:name', component: LifeCycleComponent }
+   ,
+   { path: 'hero/:id', component: HeroProfileComponent }
    ,
   // {
   //   path: 'home',

@@ -26,6 +26,9 @@ import { HeroProfileComponent } from './components/hero-profile.component';
 import {MatChipList, MatChipsModule} from '@angular/material/chips';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { DragDropChipsComponent } from './components/drag-drop-chips.component';
+import { FirstComponent } from './components/first/first.component';
+import { ChildAComponent } from './components/first/child-a/child-a.component';
+import { ChildBComponent } from './components/first/child-b/child-b.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +50,10 @@ import { DragDropChipsComponent } from './components/drag-drop-chips.component';
     AdBannerComponent,
     HeroJobAdComponent,
     HeroProfileComponent,
-    DragDropChipsComponent
+    DragDropChipsComponent,
+    FirstComponent,
+    ChildAComponent,
+    ChildBComponent
   ],
   imports: [
     BrowserModule,
